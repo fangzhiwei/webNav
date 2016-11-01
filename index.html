@@ -19,6 +19,7 @@
         .main .left ul li a{color:#fff;}
         /*.left{position:fixed;}*/
         #main .fix{position:fixed;left:0;top:0;}
+        #oUl li a{display:block;}
         /*.notfix{position:inherit;top:120px;}*/
     </style>
 
@@ -85,6 +86,7 @@
             });
 
             $("#oUl li").click(function(){
+                alert(123);
                 console.log($(this).index());
                 var current = $(".row").eq($(this).index());
 
